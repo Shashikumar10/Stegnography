@@ -1,0 +1,33 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Extract Message</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" />
+</head>
+<body>
+<div class="container">
+  <h1>Extract Message</h1>
+
+  <form id="extractForm">
+    <label for="stegoFile">Stego File:</label>
+    <input type="file" id="stegoFile" accept="image/*" required>
+
+   <label for="extractPassword">Password (required):</label>
+<div class="password-container">
+  <input type="password" id="extractPassword" placeholder="8+ chars" required>
+  <i class="fa-solid fa-eye" id="toggleExtractPassword"></i>
+</div>
+
+    <button type="submit" id="extractBtn"><i class="fa-solid fa-eye"></i> Extract</button>
+  </form>
+
+  <p id="extractStatus"></p>
+  <textarea id="extractedMessage" rows="5" readonly placeholder="Extracted message will appear here..."></textarea>
+  <p><a href="index.html"><i class="fa-solid fa-house"></i> Back to Home</a></p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Embed Message</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" />
+</head>
+<body>
+<div class="container">
+  <h1>Embed Message</h1>
+  <form id="embedForm">
+    <label for="masterFile">Master File:</label>
+    <input type="file" id="masterFile" required>
+
+    <label for="message">Message:</label>
+    <textarea id="message" rows="5" required></textarea>
+
+    <label for="password">Password (required):</label>
+<div class="password-container">
+  <input type="password" id="password" placeholder="8+ chars" required>
+  <i class="fa-solid fa-eye" id="togglePassword"></i>
+</div>
+
+
+    <button type="submit" id="embedBtn"><i class="fa-solid fa-lock"> </i> Embed & Download</button>
+  </form>
+
+  <p id="embedStatus"></p>
+  <p><a href="index.html"><i class="fa-solid fa-house"> </i> Back to Home</a></p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
